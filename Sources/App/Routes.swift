@@ -84,6 +84,8 @@ extension Droplet {
         // POST /login
         // Authorization: Basic <base64 email:password>
         password.post("login") { req in
+            
+            
             let user = try req.user()
             let token = try Token.generate(for: user)
             try token.save()
@@ -110,6 +112,9 @@ extension Droplet {
         token.get("me") { req in
             let user = try req.user()
             return "Hello, \(user.name)"
+        }
+        token.get("protectedRoute") { req in
+            return "Hello, you can get access on this route"
         }
     }
 }

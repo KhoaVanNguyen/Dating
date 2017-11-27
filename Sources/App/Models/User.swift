@@ -4,6 +4,8 @@ import AuthProvider
 import HTTP
 
 final class User: Model {
+  
+    
     let storage = Storage()
     
     /// The name of the user
