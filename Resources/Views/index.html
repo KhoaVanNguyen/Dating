@@ -1,8 +1,10 @@
 <div>
     <h1 style="text-align: center;">Danh sách API - Dating APP</h1>
 </div>
+
+
 <div>
-    <h2>1. Login</h2>
+    <h2>1. Đăng ký tài khoản </h2>
     <strong>TYPE</strong>: POST
 
     <br />
@@ -11,7 +13,7 @@
 
     <br />
     <br />
-    
+
     <strong>BODY PARAMS</strong>:
     <table style="height: 117px;" width="190">
         <tbody>
@@ -29,9 +31,52 @@
             </tr>
         </tbody>
     </table>
-    
+
 
     <strong>Example Params:</strong>
     { "name": "Nam", "email": "user2@gmail.com", "password": "12345" }
+
+</div>
+
+
+<div>
+    <h2>2. Login</h2>
+    <strong>TYPE</strong>: POST
+     <br />
+    <br />
+    <strong>Authorization Type</strong>: Basic Auth
+
+
+    <br />
+    <br />
+    <strong>URL</strong>: https://dating-deploy.vapor.cloud/login   
+
+    <br />
+    <br />
+
+    <br /><br />
+
+    
+   
+
+</div>
+
+
+
+
+<div>
+    <h2>3. Xem user hiện tại ( get curent user )</h2>
+    <strong>TYPE</strong>: GET
+     <br />
+    <br />
+    <strong>Authorization Type</strong>: Bear Token ( token lấy từ API Login )
+
+
+    <br />
+    <br />
+<strong>URL</strong>: https://dating-deploy.vapor.cloud/me
+
+    <br />
+    <br />
 
 </div>
