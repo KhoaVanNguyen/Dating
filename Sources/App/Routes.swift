@@ -13,6 +13,7 @@ extension Droplet {
     /// creating a new User.
     private func setupUnauthenticatedRoutes() throws {
         // a simple json example response
+        
         get("hello") { req in
             var json = JSON()
             try json.set("hello", "world")

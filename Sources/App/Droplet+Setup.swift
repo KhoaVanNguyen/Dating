@@ -1,4 +1,4 @@
-import Vapor
+ import Vapor
 import AuthProvider
 
 extension Droplet {

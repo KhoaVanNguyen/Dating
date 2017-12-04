@@ -23,4 +23,10 @@ try config.setup()
 let drop = try Droplet(config)
 try drop.setup()
 
+drop.get("/") {
+    req in
+    return try drop.view.make("index.html")
+}
+
 try drop.run()
+
