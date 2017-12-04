@@ -111,7 +111,7 @@ extension Droplet {
         // Authorization: Bearer <token from /login>
         token.get("me") { req in
             let user = try req.user()
-            return "Hello, \(user.name)"
+            return "Xin Chao, \(user.name)"
         }
         token.get("protectedRoute") { req in
             return "Hello, you can get access on this route"
